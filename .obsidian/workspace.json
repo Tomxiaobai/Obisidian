@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c597d82de7e2d838",
+        "id": "7fa61eb11c52e11c",
         "type": "tabs",
         "children": [
           {
-            "id": "895c9ba03bc4f789",
+            "id": "5881c5b93e315202",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -148,9 +148,12 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "895c9ba03bc4f789",
+  "active": "5881c5b93e315202",
   "lastOpenFiles": [
+    "Writing/Latex.md",
+    "Writing/MarkDown.md",
     "Algorithm/算法总结.md",
+    "Writing",
     "EveryDay/每日清单.md",
     "未命名.md",
     "EveryDay",
