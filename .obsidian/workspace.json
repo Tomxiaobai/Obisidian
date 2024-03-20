@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm/算法总结.md",
-                "mode": "preview",
+                "file": "Online Debug/Golang.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm/算法总结.md",
+                "file": "Online Debug/Golang.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm/算法总结.md",
+                "file": "Online Debug/Golang.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,11 +125,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithm/算法总结.md"
+                "file": "Online Debug/Golang.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -150,12 +151,19 @@
   },
   "active": "5881c5b93e315202",
   "lastOpenFiles": [
+    "Attachment/fire view 参数分析.png",
+    "Online Debug/Golang.md",
+    "Attachment/fire view pprof.png",
+    "Attachment/goroutine pprof.png",
+    "Attachment/pprofile one.png",
+    "Attachment/cpu pprof.png",
+    "Attachment/heap pprof.png",
+    "未命名.md",
+    "EveryDay/每日清单.md",
+    "Algorithm/算法总结.md",
     "Writing/Latex.md",
     "Writing/MarkDown.md",
-    "Algorithm/算法总结.md",
     "Writing",
-    "EveryDay/每日清单.md",
-    "未命名.md",
     "EveryDay",
     "[.md",
     "DeepLearning",
