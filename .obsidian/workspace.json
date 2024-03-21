@@ -146,6 +146,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -159,6 +160,10 @@
   },
   "active": "34c52cef6b4bbd3c",
   "lastOpenFiles": [
+    "Attachment/Book/English",
+    "Attachment/Book/Language",
+    "Attachment/Book/动态规划",
+    "未命名",
     "Attachment/Book",
     "Blockchain",
     "面经/笔试&面试总结.md",
@@ -180,10 +185,6 @@
     "DeepLearning",
     "动态.md",
     "Online Debug",
-    "Welcome.md",
-    "Network",
-    "DataBase",
-    "Linux",
-    "Attachment"
+    "Welcome.md"
   ]
 }
