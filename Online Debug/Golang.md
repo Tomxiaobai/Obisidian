@@ -40,7 +40,41 @@
   
 ##### runtime/pprof 生成pprof文件
 
+> 该方式适用于工具性应用，在执行的代码中间通过使用runtime/pprof包，生成一个pprof文件，然后对该文件以命令行浏览器等形式进行数据分析。
+
+- 示例代码：对一个字符串循环追加内容1k次
+```go
+impot(
+	"runtime/pprof"
+)
+
+func main() {
+	cpu_pprof, _ := os.Create("cpu.pprof")
+	_ = pprof.StartCPUProfile(cpu_pprof)
+	// do sth
+	pprof.StopCPUProfile()
+	_ = file.Close()
+	_ = cpu_pprof.Close()
+}
+```
+- 内存分析是记录某个时刻的内存信息，所以直接创建一个pprof文件并写入然后关闭：
+```go
+impot(
+	"runtime/pprof"
+)
+
+func main() {
+	// do sth
+	runtime.GC()
+	heap_pprof, _ := os.Create("heap.pprof")
+	_ = pprof.WriteHeapProfile(heap_pprof)
+	_ = heap_pprof.Closr()
+}
+```
 ###### 终端命令行分析
+ `go tool pprof cpu.pprof`
 ###### 可视化界面分析
+`go tool pprof -http=:8081 cpu.pprof`
+
 
 

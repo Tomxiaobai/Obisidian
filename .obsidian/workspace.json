@@ -13,10 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Online Debug/Golang.md",
-                "mode": "source",
+                "file": "EveryDay/每日清单.md",
+                "mode": "preview",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "c396f1c98624e951",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Online Debug/Golang.md",
+                "file": "EveryDay/每日清单.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Online Debug/Golang.md",
+                "file": "EveryDay/每日清单.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Online Debug/Golang.md"
+                "file": "EveryDay/每日清单.md"
               }
             }
           }
@@ -149,18 +157,21 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "5881c5b93e315202",
+  "active": "34c52cef6b4bbd3c",
   "lastOpenFiles": [
-    "Attachment/fire view 参数分析.png",
+    "Attachment/Book",
+    "Blockchain",
+    "面经/笔试&面试总结.md",
+    "面经",
+    "EveryDay/每日清单.md",
     "Online Debug/Golang.md",
+    "Algorithm/算法总结.md",
+    "Attachment/fire view 参数分析.png",
     "Attachment/fire view pprof.png",
     "Attachment/goroutine pprof.png",
     "Attachment/pprofile one.png",
     "Attachment/cpu pprof.png",
     "Attachment/heap pprof.png",
-    "未命名.md",
-    "EveryDay/每日清单.md",
-    "Algorithm/算法总结.md",
     "Writing/Latex.md",
     "Writing/MarkDown.md",
     "Writing",
@@ -173,7 +184,6 @@
     "Network",
     "DataBase",
     "Linux",
-    "Attachment",
-    "Algorithm"
+    "Attachment"
   ]
 }
