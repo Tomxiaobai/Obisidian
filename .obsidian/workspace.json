@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EveryDay/每日清单.md",
+                "file": "DataBase/Mysql.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "EveryDay/每日清单.md",
+                "file": "DataBase/Mysql.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "EveryDay/每日清单.md",
+                "file": "DataBase/Mysql.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "EveryDay/每日清单.md"
+                "file": "DataBase/Mysql.md"
               }
             }
           }
@@ -150,26 +150,27 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "20cf869c1f29d9d5",
+  "active": "34c52cef6b4bbd3c",
   "lastOpenFiles": [
+    "Work",
+    "Attachment/mysql存储流程.png",
+    "Attachment/隔离级别.png",
+    "Attachment/redo log vs binlog.png",
+    "DataBase/Mysql.md",
+    "Attachment/redo log sync.png",
+    "EveryDay/每日清单.md",
     "Algorithm/算法总结.md",
     "Attachment/symbols.pdf",
     "Writing/Latex.md",
-    "EveryDay/每日清单.md",
     "Writing/Vim.md",
     "Code/代码实现.md",
     "面经/笔试&面试总结.md",
-    "未命名",
     "Attachment/构建哈夫曼树-08.png",
     "Attachment/Pasted image 20240321163633.png",
     "Attachment/构建哈夫曼树-06.png",
     "Attachment/构建哈夫曼树-07.png",
     "Attachment/构建哈夫曼树-05.png",
     "Attachment/构建哈夫曼树-04.png",
-    "Attachment/构建哈夫曼树-03.png",
-    "Attachment/构建哈夫曼树-02.png",
-    "Attachment/构建哈夫曼树-01.png",
-    "Attachment/哈夫曼树.png",
     "Attachment/Book/English",
     "Attachment/Book/Language",
     "Attachment/Book/动态规划",
