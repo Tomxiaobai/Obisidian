@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d0ff031419b497e0",
+        "id": "5de203d21505436d",
         "type": "tabs",
         "children": [
           {
-            "id": "82ff484e42777712",
+            "id": "3cfeb86dd7035473",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Algorithm/算法总结.md",
-                "mode": "source",
-                "source": false
+                "file": "Work/知识点.pdf"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm/算法总结.md",
+                "file": "Work/知识点.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm/算法总结.md",
+                "file": "Work/知识点.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithm/算法总结.md"
+                "file": "Work/知识点.pdf"
               }
             }
           }
@@ -138,27 +136,32 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "audio-recorder:Start/stop recording": false,
-      "workspaces:Manage workspace layouts": false
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "audio-recorder:开始/结束录音": false,
+      "workspaces:管理工作区布局": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "82ff484e42777712",
+  "active": "3cfeb86dd7035473",
   "lastOpenFiles": [
+    "Attachment/Book/存储/mysql45组合.pdf",
+    "Work/知识点.pdf",
+    "Work/工作相关.md",
+    "ByteDance/ByteDance.md",
+    "Algorithm/算法总结.md",
+    "Untitled",
     "面经/笔试&面试总结.md",
     "ByteDance",
-    "Work/工作相关.md",
     "Attachment/个人资料.png",
     "Attachment/职级先关.png",
     "Attachment/绩效截图.png",
     "Trivial/旅游日记 & 规划.md",
-    "Algorithm/算法总结.md",
     "Trivial",
     "DataBase/Mysql.md",
     "Work",
@@ -178,8 +181,6 @@
     "Attachment/Book/Language",
     "Attachment/Book/动态规划",
     "Attachment/Book",
-    "Blockchain",
-    "面经",
     "Online Debug/Golang.md",
     "Writing/MarkDown.md",
     "[.md",
