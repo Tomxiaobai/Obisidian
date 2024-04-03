@@ -11,9 +11,11 @@
             "id": "3cfeb86dd7035473",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Work/知识点.pdf"
+                "file": "ByteDance/ByteDance.md",
+                "mode": "preview",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work/知识点.pdf",
+                "file": "ByteDance/ByteDance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work/知识点.pdf",
+                "file": "ByteDance/ByteDance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work/知识点.pdf"
+                "file": "ByteDance/ByteDance.md"
               }
             }
           }
@@ -150,10 +152,13 @@
   },
   "active": "3cfeb86dd7035473",
   "lastOpenFiles": [
-    "Attachment/Book/存储/mysql45组合.pdf",
-    "Work/知识点.pdf",
-    "Work/工作相关.md",
+    "OwnPSM/游玩地图个人开源项目搭建.md",
     "ByteDance/ByteDance.md",
+    "OwnPSM",
+    "Work/知识点.pdf",
+    "未命名",
+    "Attachment/Book/存储/mysql45组合.pdf",
+    "Work/工作相关.md",
     "Algorithm/算法总结.md",
     "Untitled",
     "面经/笔试&面试总结.md",
@@ -178,9 +183,6 @@
     "Attachment/Pasted image 20240321163633.png",
     "Attachment/构建哈夫曼树-06.png",
     "Attachment/Book/English",
-    "Attachment/Book/Language",
-    "Attachment/Book/动态规划",
-    "Attachment/Book",
     "Online Debug/Golang.md",
     "Writing/MarkDown.md",
     "[.md",
