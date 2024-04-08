@@ -53,7 +53,37 @@ go mod tidy
 2. 后台上线流程
 3. 监控告警系统
 4. Janux 前端交互 [前端协议转换](https://cloud.bytedance.net/bam/rd/webcast.gamecp.promote/idl?x-resource-account=public&cluster=default&version=1.0.1142)
+5. BOE部署了服务 但是在测试接口时报错： 
+	找不到服务地址，可能的原因: 1.psm不存在; 2.psm未注册consul (sd lookup {service_name} 为空), 可能是tce服务没有配置监听端口; 3.检查是否cluster/env 信息有误。 如果是在测试，可以尝试输入自定义地址 -- 已解决
+6. 部分业务场景&名词不太熟悉 -- 待沟通
+7. 
 
-## 开发流程
+## 开发流程 & 规范
 1. 后台更新协议(webcast_idl) $\rightarrow$ overpass根据个人分支生成代码([overpass](https://overpass.bytedance.net/idl_info?s=webcast.newbee.core)) $\rightarrow$ [bam导入IDL](https://cloud.bytedance.net/bam/rd/webcast.game.tmtest/api_doc/new_api_doc?x-resource-account=public)
 2. GoLand可以搭建BOE环境测试接口
+3. 使用Jsonx 并且 尽量函数要写通用
+4. CR流程标准：
+	1. 如果定义了新接口，接口定义完需要提交一次CR
+	2. 完成接口或者函数实现，如果新增代码过多 需要拆分进行CR
+	3. 完成BUG修复需要CR
+
+
+## 本地开发相关文件
+- Navicate root TM.123
+
+
+## 组件学习归纳
+### AnyCache
+	
+### Golang源码解析
+- Slice
+- Map
+- sync.Map
+- 
+
+
+### GoLang编码规范[[Language/GoLang|GoLang]]
+### Kafka
+
+### RocketMQ
+
