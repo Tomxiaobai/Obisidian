@@ -1,4 +1,11 @@
 [
   "obsidian-annotator",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "dataview",
+  "obsidian-tasks-plugin",
+  "calendar",
+  "obsidian-mind-map",
+  "obsidian-kanban",
+  "obsidian-day-planner",
+  "obsidian-minimal-settings"
 ]

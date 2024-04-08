@@ -75,8 +75,104 @@ go mod tidy
 ## 组件学习归纳
 ### AnyCache
 	
-### Golang源码解析
-- Slice
+### Golang源码解析 [[Language/GoLang|相关总结]]
+#### Slice 
+##### Go Slice 源码分析
+
+Go语言的slice结构体定义在`runtime/slice.go`文件中，其核心结构如下：
+
+```go
+type slice struct {
+    array unsafe.Pointer // 指向底层数组的指针
+    len   int             // slice的长度
+    cap   int             // slice的容量
+}
+```
+
+slice的创建通常通过`make`函数或者直接通过数组的切片操作来完成。`make`函数的源码实现如下：
+
+```go
+func makeslice(et *_type, len, cap int) unsafe.Pointer {
+    // ...内存分配和初始化操作...
+    return mallocgc(mem, et, true)
+}
+```
+
+slice扩容的机制在`growslice`函数中实现，当slice的容量不足以添加新元素时，会触发扩容操作：
+
+```go
+func growslice(et *_type, old slice, cap int) slice {
+    // ...扩容逻辑，包括计算新容量、内存分配和数据拷贝...
+    return slice{p, old.len, newcap}
+}
+```
+
+##### 常见用法
+
+1. **创建Slice**：
+   ```go
+   // 使用make函数创建一个长度为0，容量为3的int类型的slice
+   slice := make([]int, 0, 3)
+   ```
+
+2. **追加元素**：
+   ```go
+   // 向slice中追加元素
+   slice = append(slice, 1, 2, 3)
+   ```
+
+3. **切片操作**：
+   ```go
+   // 获取slice的一个子序列
+   subSlice := slice[1:4] // 从第二个元素开始到第四个元素
+   ```
+
+4. **遍历Slice**：
+   ```go
+   // 遍历slice中的每个元素
+   for i := range slice {
+       fmt.Println(slice[i])
+   }
+   ```
+
+5. **修改Slice元素**：
+   ```go
+   // 修改slice中的元素
+   slice[0] = 10
+   ```
+
+##### 可能出现的错误用法
+
+1. **超出Slice长度访问**：
+   ```go
+   // 错误的访问方式，可能会导致panic
+   value := slice[10] // slice的长度小于11
+   ```
+
+2. **修改从函数返回的Slice**：
+   ```go
+   func f(s []int) {
+       s[0] = 10 // 这只会修改传入的slice的副本，不会影响原始slice
+   }
+   ```
+
+3. **忘记Slice扩容可能导致的性能问题**：
+   ```go
+   // 频繁的append操作，没有预先分配足够的容量，会导致多次扩容
+   slice := make([]int, 0, 1)
+   for i := 0; i < 1000; i++ {
+       slice = append(slice, i)
+   }
+   ```
+
+4. **错误的容量判断**：
+   ```go
+   // 错误的判断方式，cap是slice的总容量，不是剩余空间
+   if cap(slice) == 0 {
+       // 错误，这会判断slice是否已经扩容到其最大容量
+   }
+   ```
+**注意事项** [[Language/GoLang#^727187|注意边界处拷贝]]
 - Map
 - sync.Map
 - 

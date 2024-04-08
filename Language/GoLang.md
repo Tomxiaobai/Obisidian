@@ -234,7 +234,7 @@ change.md
 
 - [指导原则](#指导原则)
 
-- [指向 interface 的指针](#指向-interface-的指针)
+- [[Language/GoLang#指向 interface 的指针|指向 interface 的指针]]
 
 - [Interface 合理性验证](#interface-合理性验证)
 
@@ -243,7 +243,7 @@ change.md
 - [零值 Mutex 是有效的](#零值-mutex-是有效的)
 
 - [在边界处拷贝 Slices 和 Maps](#在边界处拷贝-slices-和-maps)
-
+ 
 - [接收 Slices 和 Maps](#接收-slices-和-maps)
 
 - [返回 slices 或 maps](#返回-slices-或-maps)
@@ -978,7 +978,7 @@ mutex 及其方法是 `SMap` 的实现细节，对其调用者不可见。
   
 
 ### 在边界处拷贝 Slices 和 Maps
-
+^727187
   
 
 slices 和 maps 包含了指向底层数据的指针，因此在需要复制它们时要特别注意。
