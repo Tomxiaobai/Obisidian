@@ -242,9 +242,9 @@ change.md
 
 - [零值 Mutex 是有效的](#零值-mutex-是有效的)
 
-- [在边界处拷贝 Slices 和 Maps](#在边界处拷贝-slices-和-maps)
+- [[Language/GoLang#在边界处拷贝 Slices 和 Maps|在边界处拷贝 Slices 和 Maps]]
  
-- [接收 Slices 和 Maps](#接收-slices-和-maps)
+- [[Language/GoLang#接收 Slices 和 Maps|接收 Slices 和 Maps]]
 
 - [返回 slices 或 maps](#返回-slices-或-maps)
 
