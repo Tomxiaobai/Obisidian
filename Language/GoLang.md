@@ -6871,11 +6871,19 @@ golangci-lint 有[various-linters]可供使用。建议将上述linters作为基
 
 [various-linters]: https://golangci-lint.run/usage/linters/
 
-  
-  
 
-## Stargazers over time
+## 源码解析
 
-  
+### SingleFlight
+`singleflight` 包的主要目标是在高并发环境下，减少对相同资源的重复请求，提高系统的性能和稳定性。其主要思想是通过将并发请求合并成一个单一的请求，然后将结果返回给所有的请求者，从而避免了重复计算和资源浪费。
 
-[![Stargazers over time](https://starchart.cc/xxjwxc/uber_go_guide_cn.svg)](https://starchart.cc/xxjwxc/uber_go_guide_cn)
+这个包的核心结构是 `Group`，它管理了一个共享的 `Map`，用于存储正在进行的请求以及它们的结果。当多个 goroutine 同时请求相同的资源时，`Group` 会先检查是否有正在进行的相同请求，如果有，则等待该请求的结果返回；如果没有，则发起一个真实的请求，并将结果存储在 `Map` 中以备后续使用。
+
+需要学习的地方包括：
+
+1. **并发控制机制**：了解并发环境下的竞态条件和解决方案，`singleflight` 是如何保证在高并发场景下安全地进行请求合并和结果返回的。
+2. **缓存管理**：学习如何利用缓存来避免对相同资源的重复请求，以及如何有效地管理缓存的过期和更新。
+3. **函数式选项模式**：`singleflight` 使用了函数式选项模式来允许用户自定义配置，学习如何设计和实现这种灵活的配置方式。
+4. **错误处理**：了解如何处理并发请求中可能出现的错误，以及如何在返回结果时进行适当的错误处理。
+
+深入学习 `singleflight` 源码可以帮助理解并发编程中的常见问题和解决方案，同时提高对 Go 语言并发模型的理解和应用能力。

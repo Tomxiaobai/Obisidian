@@ -11,9 +11,11 @@
             "id": "f3e06107753751be",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "Language/学习看板.md"
+                "file": "EveryDay/2024-04-17.md",
+                "mode": "preview",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Language/学习看板.md",
+                "file": "EveryDay/2024-04-17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Language/学习看板.md",
+                "file": "EveryDay/2024-04-17.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Language/学习看板.md"
+                "file": "EveryDay/2024-04-17.md"
               }
             }
           },
@@ -144,11 +146,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 482.5
+    "width": 312.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,32 +169,39 @@
   },
   "active": "f3e06107753751be",
   "lastOpenFiles": [
-    "Language/OpenSource & CodeSource.md",
+    "Attachment/Book/存储/mysql45组合.pdf",
+    "ByteDance/需求清单.md",
+    "ByteDance/ByteDance.md",
+    "Code/代码实现.md",
+    "EveryDay/2024-04-17.md",
+    "EveryDay/2024-04-16.md",
+    "Code/Mermaid示例图.md",
+    "Attachment/Pasted image 20240416151432.png",
+    "2024-04-14.md",
+    "2024-04-13.md",
+    "GitHub/AuthKey.md",
+    "GitHub",
+    "Attachment/Pasted image 20240412114850.png",
+    "EveryDay/2024-04-12.md",
+    "EveryDay/2024-04-11.md",
+    "EveryDay/2024-04-09.md",
+    "EveryDay/2024-04-10.md",
+    "Code/PlantUML绘图.md",
+    "Model/模板.md",
+    "EveryDay/每日清单.md",
     "Language/GoLang.md",
+    "Language/OpenSource & CodeSource.md",
     "Language/学习看板.md",
     "Trivial/旅游看板.md",
     "看板",
-    "EveryDay/2024-04-09.md",
-    "EveryDay/每日清单.md",
-    "Model/模板.md",
-    "Attachment/Book/存储/mysql45组合.pdf",
-    "ByteDance/ByteDance.md",
     "Writing/Obisidian工具使用方法.md",
     "Writing/Latex.md",
     "2024-04-08.md",
     "Writing/Tasks Plugin - Review and check your Statuses 2024-04-09 00-12-04.md",
     "DataBase/Mysql.md",
-    "2024-04-10.md",
     "Model",
-    "Algorithm/算法总结.md",
-    "指向 interface 的指针.md",
-    "Writing/Vim.md",
-    "Writing/MarkDown.md",
     "Attachment/symbols.pdf",
     "Language",
-    "Work/工作相关.md",
-    "面经/笔试&面试总结.md",
-    "OwnPSM/游玩地图个人开源项目搭建.md",
     "OwnPSM",
     "Work/知识点.pdf",
     "Untitled",
@@ -200,18 +209,10 @@
     "Attachment/个人资料.png",
     "Attachment/职级先关.png",
     "Attachment/绩效截图.png",
-    "Trivial/旅游日记 & 规划.md",
-    "Trivial",
     "Attachment/mysql存储流程.png",
     "Attachment/隔离级别.png",
     "Attachment/redo log vs binlog.png",
     "Attachment/redo log sync.png",
-    "Code/代码实现.md",
-    "Attachment/构建哈夫曼树-08.png",
-    "Attachment/Pasted image 20240321163633.png",
-    "Attachment/构建哈夫曼树-06.png",
-    "Online Debug/Golang.md",
-    "[.md",
-    "动态.md"
+    "Attachment/构建哈夫曼树-08.png"
   ]
 }
