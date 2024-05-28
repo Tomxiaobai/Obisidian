@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ccb770328ae680f0",
+        "id": "5d2bd6e004a9ca74",
         "type": "tabs",
         "children": [
           {
-            "id": "f3e06107753751be",
+            "id": "a2afdfb362c97337",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EveryDay/2024-04-17.md",
-                "mode": "preview",
+                "file": "ByteDance/ByteDance.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 369.5
+    "width": 247.5
   },
   "right": {
     "id": "2a4db68fdfcfe35f",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "EveryDay/2024-04-17.md",
+                "file": "ByteDance/ByteDance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "EveryDay/2024-04-17.md",
+                "file": "ByteDance/ByteDance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "EveryDay/2024-04-17.md"
+                "file": "ByteDance/ByteDance.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -167,13 +167,32 @@
       "obsidian-day-planner:Timeline": false
     }
   },
-  "active": "f3e06107753751be",
+  "active": "a2afdfb362c97337",
   "lastOpenFiles": [
-    "Attachment/Book/存储/mysql45组合.pdf",
     "ByteDance/需求清单.md",
     "ByteDance/ByteDance.md",
-    "Code/代码实现.md",
+    "Algorithm/算法总结.md",
+    "EveryDay/每日清单.md",
+    "Language/CPP.md",
+    "Attachment/img_v3_02al_c93eed3c-8baf-4a19-86ab-79a78550b85g.jpg",
+    "面经/笔试&面试总结.md",
+    "Attachment/Pasted image 20240506201653.png",
+    "Attachment/Pasted image 20240506142232.png",
+    "Attachment/Pasted image 20240430153411.png",
+    "Work/工作相关.md",
+    "Work/知识点.pdf",
+    "Attachment/个人资料.png",
+    "Attachment/Book/存储/mysql45组合.pdf",
+    "Attachment/symbols.pdf",
+    "EveryDay/2024-04-23.md",
+    "2024-04-18.md",
+    "2024-04-22.md",
+    "2024-04-21.md",
+    "2024-04-20.md",
+    "2024-04-19.md",
+    "Attachment/Book/设计模式之禅（第2版）.pdf",
     "EveryDay/2024-04-17.md",
+    "Code/代码实现.md",
     "EveryDay/2024-04-16.md",
     "Code/Mermaid示例图.md",
     "Attachment/Pasted image 20240416151432.png",
@@ -188,31 +207,13 @@
     "EveryDay/2024-04-10.md",
     "Code/PlantUML绘图.md",
     "Model/模板.md",
-    "EveryDay/每日清单.md",
-    "Language/GoLang.md",
-    "Language/OpenSource & CodeSource.md",
-    "Language/学习看板.md",
-    "Trivial/旅游看板.md",
     "看板",
-    "Writing/Obisidian工具使用方法.md",
-    "Writing/Latex.md",
-    "2024-04-08.md",
-    "Writing/Tasks Plugin - Review and check your Statuses 2024-04-09 00-12-04.md",
-    "DataBase/Mysql.md",
     "Model",
-    "Attachment/symbols.pdf",
     "Language",
     "OwnPSM",
-    "Work/知识点.pdf",
     "Untitled",
-    "ByteDance",
-    "Attachment/个人资料.png",
     "Attachment/职级先关.png",
     "Attachment/绩效截图.png",
-    "Attachment/mysql存储流程.png",
-    "Attachment/隔离级别.png",
-    "Attachment/redo log vs binlog.png",
-    "Attachment/redo log sync.png",
-    "Attachment/构建哈夫曼树-08.png"
+    "Attachment/mysql存储流程.png"
   ]
 }
