@@ -50,7 +50,7 @@ MT.1234
 
 #### 研发流程重点
 - 需求文档梳理 $\rightarrow$ [绑定TCE&新建研发环境](https://bytecycle.bytedance.net/space/webcast_deploy/module/demand/demand/3159521873/detail?active=process&feature_space_id=dygame1)$\rightarrow$ 建立远端分支和本地分支
-- 通过[直播联调平台](https://bytecycle.bytedance.net/space/webcast_deploy/)绑定对应的项目创建BOE和PPE环境，同时创建对应分支，这里是开发缓解
+- 通过[直播联调平台](https://bytecycle.bytedance.net/space/webcast_deploy/)绑定对应的项目创建BOE和PPE环境，同时创建对应分支，这里是开发环节
 ![[Pasted image 20240416151432.png]]
 - 更新IDL文件需要去[直播研发平台](https://webcast-dev.bytedance.net/)进行创建
 - 根据远端的分支如`feat_game_xigua_send_notice`创建本地dev分支`dev_feat_game_xigua_send_notice` 进行开发
