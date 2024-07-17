@@ -1189,3 +1189,92 @@ result.RowsAffected // return the total rows affected
 
 #### 测试账号
 12341800462 3695
+
+
+#### CR模板
+背景：
+
+[【游戏X创中PC】创中PC游戏小手柄挂载链路简化与收益透出 - server方案](https://bytedance.larkoffice.com/wiki/XTXYwZoQsiSWmek5TFvcqq9KnFb)
+
+MR:
+
+[[Merge Request] feat:pc创服新增图像预识别&图片打包上传 · webcast/gamecp_promote](https://bits.bytedance.net/code/webcast/gamecp_promote/merge_requests/988)
+
+针对pc创服获取推广入口状态新增游戏识别&获取游戏截图列表&打包zip上传至tos平台
+
+@梁国晋 @黄智勇 @王莞原 @于梓元 辛苦有空的同学帮忙cr下~[玫瑰]
+
+
+#### 规划
+- 现有问题：站内信目前在很多模块中维护，提搞了整体的开发维护难度和工作量
+- 解决方案：整理归纳现有在各个模块中的的站内信，统一管理站内信的收发，收敛站内信到小手柄
+- 方向：构建站内信收发模块，提高其可配置能力，简化站内信功能。新增站内信功能：如定时发送、一键发送、指定用户发送等。有余力看是否进行可配置的开发
+
+
+### 消息队列对比&总结
+Here's a detailed comparison of Kafka, Pulsar, RabbitMQ, RocketMQ, and Redis, focusing on their key differences, advantages, disadvantages, and suitable use cases:
+
+| Feature              | Kafka                                 | Pulsar                               | RabbitMQ                             | RocketMQ                             | Redis                                |
+|----------------------|---------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|--------------------------------------|
+| **Type**             | Distributed event streaming platform  | Distributed messaging and streaming  | Message broker                       | Distributed messaging and streaming  | In-memory data structure store       |
+| **Data Model**       | Topics and partitions                 | Topics, partitions, and subscriptions| Exchanges and queues                 | Topics, tags, and partitions         | Key-value pairs                      |
+| **Persistence**      | Disk-based                            | Disk-based                           | Disk-based                           | Disk-based                           | Memory-based with optional disk persistence |
+| **Message Delivery** | At-least-once, exactly-once (beta)    | At-least-once, exactly-once          | At-most-once, at-least-once          | At-least-once, exactly-once          | At-least-once                        |
+| **Latency**          | Low to moderate                       | Low                                  | Low                                  | Low                                  | Very low                             |
+| **Throughput**       | High                                  | Very high                            | Moderate                             | High                                 | High                                 |
+| **Scalability**      | Scales horizontally                   | Scales horizontally                  | Scales horizontally                  | Scales horizontally                  | Scales horizontally                  |
+| **Fault Tolerance**  | High, with replication                | High, with geo-replication           | High, with clustering                | High, with replication               | High, with replication               |
+| **Ordering**         | Guaranteed within partitions          | Guaranteed within topics and subscriptions | Guaranteed per queue                 | Guaranteed within partitions         | Not inherently ordered               |
+| **Use Cases**        | Real-time analytics, event sourcing, log aggregation | Real-time messaging, multi-tenancy, geo-replication | Task scheduling, workflow management, simple message queuing | Financial transactions, e-commerce, log aggregation | Caching, real-time analytics, session storage |
+| **Advantages**       | Mature ecosystem, strong community, robust for large-scale streaming | High throughput, low latency, multi-tenancy, geo-replication | Easy to use, supports complex routing, mature ecosystem | High throughput, low latency, supports large-scale message queuing | Extremely low latency, flexible data structures, ease of use |
+| **Disadvantages**    | Complex to set up and manage, higher latency compared to Pulsar | Newer, smaller community, less mature ecosystem | Limited throughput, higher latency compared to Kafka and Pulsar | Newer, smaller community, less mature ecosystem | Limited persistence, not ideal for high-volume streaming data |
+| **Geo-Replication**  | Supported                             | Supported with strong guarantees     | Limited support                      | Supported                            | Limited support through Redis Cluster |
+
+### Key Points:
+
+- **Kafka** is widely adopted for its robust stream processing capabilities and mature ecosystem. It excels in scenarios requiring high throughput and fault tolerance, like real-time analytics and log aggregation. However, it can be complex to set up and manage.
+
+- **Pulsar** offers similar capabilities to Kafka but with additional features like low latency, multi-tenancy, and strong geo-replication. It's suitable for scenarios requiring real-time messaging and geo-replication, though it has a newer and smaller community.
+
+- **RabbitMQ** is known for its ease of use and ability to support complex routing and task scheduling. It's ideal for task scheduling, workflow management, and simple message queuing but has limited throughput compared to Kafka and Pulsar.
+
+- **RocketMQ** is designed for high throughput and low latency, making it suitable for financial transactions, e-commerce, and log aggregation. It supports large-scale message queuing but has a newer and smaller community.
+
+- **Redis** is best known for its in-memory data storage, providing extremely low latency and flexibility with data structures. It’s ideal for caching, real-time analytics, and session storage but isn’t designed for high-volume streaming data.
+
+### Choosing the Right Tool:
+
+- **Kafka** is the best choice for established enterprises needing a robust and reliable streaming platform with a strong community and ecosystem.
+- **Pulsar** is ideal for organizations needing high throughput, low latency, and advanced features like geo-replication and multi-tenancy.
+- **RabbitMQ** is suitable for applications requiring task scheduling, workflow management, and complex message routing.
+- **RocketMQ** is perfect for high-throughput and low-latency use cases like financial transactions and e-commerce.
+- **Redis** is the go-to solution for applications requiring ultra-fast data access and flexible data structures, such as caching and real-time session management.
+
+[Stream blog](https://www.cnblogs.com/goldsunshine/p/17410148.html)
+
+
+![[Pasted image 20240717112757.png]]
+### 需求
+- 分成比&站内信相关
+1. 抖西融合西瓜站内信和手柄消费改造
+	- 针对升级作者(部分西瓜作者通过授权升级为抖音作者)在同意了入驻协议后，在合约变更、处罚等场景下使用新模板发送站内信，让作者能够第一时间获取相关信息，促进抖西作者融合，提升了升级作者推广作品体验。
+2. 【挂载】断重染新增过渡期提醒和调整分成比展示
+	- 新增三方约分成比展示，针对三方约作者，提供更加详细的收益比例份额，提高三方约作者对收益的理解。
+
+- 创中PC游戏小手柄挂载链路简化与收益透出
+	- 在PC创服简化用户挂载路径并分作者状态透传挂载收益需求中，作为需求owner，优化挂载链路，引导作者挂上游戏。针对PC创服的作者上传的作品，通过预识别判断出是否为游戏类型，自动暴露小手柄选项，提高了小手柄的曝光率。数据如下：
+	  1. 【功能分析】预识别游戏视频并优先外露小手柄使得挂载曝光渗透+60.87%，并主要贡献了手柄锚点添加规模的提升（贡献度95.01%），手柄锚点添加渗透+64.94%；挂载页曝光—>添加锚点成功转化率+2.53%；
+      2. 【挂载覆盖】挂载供给uv占比+60.86%（过程指标），整体挂载供给占比正向累计趋势（pvalue=0.1015）；剔除超高频投稿用户（实验期投稿超630次），挂载供给占比+16.24%；
+      3. 下钻粉丝分层，万粉上、万粉下作者的挂载供给占比均有提升，万粉上作者挂载供给占比+25.71%，万粉下作者挂载供给占比+13.59%
+  - 在金铲铲 & 巅峰极速周年庆前链路分人群展示不同锚点需求中，作为需求owner：
+	- 新增新老用户判别标准，针对不同类型的用户锚点&讲解卡&预览流使用不同的文案展示，从而促进用户留存率以及点击率。
+	- 新增文案随机展示策略，优化原有的文案轮转策略，提高每个文案的曝光率，提高用户转化率。
+
+- 技术优化：
+1. 废弃现有气泡消息本地缓存，新增避免回源策略。
+	- 降低请求多次回源导致的DB压力增大，使的查询用户查询DB获取气泡消息请求量降为0
+	- 针对气泡消息新增淘汰策略，废弃原有气泡消息混存过期时间，永久留存尚未消费的气泡消息&实时删除缓存中存有的数据，降低缓存内存使用率。
+
+七月份后：
+- 新增专区和创作者任务支持机构分成
+	- 新增机构
