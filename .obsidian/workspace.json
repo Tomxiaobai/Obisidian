@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trivial/旅游日记 & 规划.md",
+                "file": "ByteDance/ByteDance.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Trivial/旅游日记 & 规划.md",
+                "file": "ByteDance/ByteDance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Trivial/旅游日记 & 规划.md",
+                "file": "ByteDance/ByteDance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Trivial/旅游日记 & 规划.md"
+                "file": "ByteDance/ByteDance.md"
               }
             }
           },
@@ -169,6 +169,7 @@
   },
   "active": "cbd7df027eb71d00",
   "lastOpenFiles": [
+    "Trivial/旅游日记 & 规划.md",
     "Trivial/旅游看板.md",
     "ByteDance/ByteDance.md",
     "Attachment/Pasted image 20240717112757.png",
@@ -209,7 +210,6 @@
     "EveryDay/2024-04-12.md",
     "EveryDay/2024-04-11.md",
     "EveryDay/2024-04-09.md",
-    "EveryDay/2024-04-10.md",
     "看板",
     "Model",
     "Language",
